@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="navBar"><img src="imgs/GitHub.png" alt=""></div>
+    <a href="https://github.com/GabrielMFC" id="navBar"><img src="imgs/GitHub.png" alt=""></a>
     <div id="centralizarSobreMimFlex">
         <div id="SobreMim">
             <h1>Sobre Mim</h1>
@@ -26,24 +26,103 @@
         <div class="Quadro" id="Projetos">
             <h1>Projetos</h1>
             <div id="AlinharProjetoFlex">
-                <div class="Projeto">
+                <a href="https://gabrielmfc.github.io/Jump_Bird/" target="_blank" class="Projeto">
                     <img src="imgs/birdtop.png" alt="">
-                    <p>Flappy Bird</p>
-                </div>
+                    <p class="link">Jump Bird</p>
+                </a>
 
-                <div class="Projeto">
+                <a href="https://gabrielmfc.github.io/Portifolio/" target="_blank" class="Projeto">
                     <img id="gameboy" src="imgs/GameBoy.png" alt="">
-                    <p>Portifólio</p>
-                </div>
+                    <p class="link">Portifólio</p>
+                </a>
 
-                <div class="Projeto">
-                    <img src="imgs/birdtop.png" alt="">
-                    <p></p>
-                </div>
+                <a href="https://github.com/GabrielMFC/ApiJava" target="_blank" class="Projeto">
+                    <img src="imgs/Java.webp" alt="">
+                    <p class="link">API Java</p>
+                </a>
             </div>
         </div>
 
-        <div class="ResumoProjetos Quadro" id="ResumoProjeto"></div>
+        <div class="ResumoProjetos Quadro">
+            <div class="capa">
+                <img src="imgs/birdtop.png" alt="">
+                <h1>Jump Bird</h1>
+            </div>
+            <div class="textoExplicativo">
+                <p>Meu primeiro projeto é um jogo simples inspirado no famoso Flappy Bird. Controle o pássaro, desvie dos obstáculos e veja até onde você consegue chegar!</p>
+            </div>
+        </div>
+
+        <div class="dificuldades Quadro">
+            <h1>Dificuldades</h1>
+            <p>Ocorreu tudo bem no início, mas ao decorrer do projeto enfrentei duas grandes dificuldades.<br> <br> Colisão: Minha primeira grande dificuldade foi adicionar colisão no pássaro e nos obstáculos.<br> <br> Tamanho dos obstáculos: Minha segunda maior dificuldade foi adicionar um tamanho mínimo na abertura dos obstáculos. A abertura dos obstáculos não poderia ser muito grande, senão o jogo ficaria muito fácil, e não poderia ser muito pequena, senão o jogo seria impossível.
+            </p>
+        </div>
+
+        <div class="resolucoes Quadro">
+            <h1>Resoluções</h1>
+            <p>Colisão: Após 3 dias pesquisando e testando, eu consegui chegar em um resultado que resolvia meu problema.<br>
+                <br>
+            Tamanho dos obstáculos: Mesmo após vários dias, não consegui resolver isso na época.
+            </p>
+        </div>
+
+        <div class="ResumoProjetos Quadro">
+            <div class="capa">
+                <img id="gameboyCapa" src="imgs/GameBoy.png" alt="">
+                <h1>Portifólio retro</h1>
+            </div>
+            <div class="textoExplicativo">
+                <p>Esse é um dos meus favoritos, é um Portifólio que eu fiz na época que eu estava começando a aprender progamação.</p>
+            </div>
+        </div>
+
+        <div class="dificuldades Quadro">
+            <h1>Dificuldade</h1>
+            <p>
+                O único problema significativo que tive durante esse projeto foi a responsividade em dispositivos móveis.
+            </p>
+        </div>
+
+        <div class="resolucoes Quadro">
+            <h1>Resoluções</h1>
+            <p>
+                Após alguns dias de pesquisa, descobri algumas propriedades no CSS que foram fundamentais para resolver meu problema de responsividade.
+            </p>
+        </div>
+        <!-- Ponto -->
+        <div class="ResumoProjetos Quadro">
+            <div class="capa" id="JavaCapa">
+                <img id="JavaImg" src="imgs/Java.webp" alt="">
+                <h1>API Java</h1>
+            </div>
+            <div class="textoExplicativo">
+                <p>Essa foi uma API que foi criada em Java durante um semestre da minha faculdade.</p>
+            </div>
+        </div>
+
+        <div class="dificuldades Quadro">
+            <h1>Dificuldade</h1>
+            <p>
+                Foi minha primeira vez criando uma API, mas apesar disso a minha maior dificuldade foi com certeza a sintaxe do Java.
+            </p>
+        </div>
+
+        <div class="resolucoes Quadro">
+            <h1>Resoluções</h1>
+            <p>
+                O problema de entender a sintaxe complexa do Java foi "resolvido" basicamente lendo a documentação e assistindo a vídeo aulas.
+            </p>
+        </div>
+
+        <div id="Rodape" class="Quadro">
+            <h1>Créditos:</h1>
+            <div id="AlinharCreditoFlex">
+                <a href="https://www.flaticon.com/br/icone-gratis/whatsapp_160200?term=whatsapp&page=1&position=6&origin=search&related_id=160200">Ícone do Whatsapp</a>
+                <a href="https://www.flaticon.com/br/icone-gratis/o-email_747314?term=email&page=1&position=3&origin=search&related_id=747314">Ícone do E-mail</a>
+                <a href="https://www.flaticon.com/free-icon/social_16546614?term=github&page=1&position=16&origin=search&related_id=16546614">Ícone do GitHub</a>
+            </div>
+        </div>
     </div>
 
     <script>

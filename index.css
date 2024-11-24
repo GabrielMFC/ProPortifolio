@@ -29,11 +29,11 @@
             font-weight: 300;
             font-size: 2.5vh;
         }
-        p,h1{
+        p,h1,a{
             font-family: "League Spartan";
         }
         #navBar{
-            width: 10vh;
+            width: 9vh;
             height: 8vh;
             position: fixed;
             bottom: 90%;
@@ -45,6 +45,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 2px solid black;
+        }
+        #navBar:hover{
+            animation: NavAnimation 2s linear infinite;
+        }
+        @keyframes NavAnimation {
+            0%{
+                box-shadow: 0px 0px 20px 1px  red;
+                transform: scale(1);
+            }
+            25%{
+                box-shadow: 0px 10px 20px 1px  rgb(0, 247, 255);
+                transform: scale(1.1);
+            }
+            50%{
+                box-shadow: 0px 0px 20px 1px  rgb(141, 47, 255);
+                transform: scale(1.1);
+            }
+            100%{
+                box-shadow: 0px 0px 20px 1px  rgb(255, 0, 0);
+                transform: scale(1);
+            }
         }
         #navBar > img{
             width: 70%;
@@ -55,7 +77,6 @@
             transform: translateY(20px);
             transition: opacity  1.5s ease-in-out;
             margin: 20px 0px;
-
             position: relative;
             background-color: var(--MainColor);
             border-radius: 2.5vh;
@@ -165,6 +186,7 @@
         .Projeto > p{
             font-size: 2vh;
             font-weight: 600;
+            text-decoration: underline;
         }
         #AlinharProjetoFlex{
             width: 100%;
@@ -187,11 +209,82 @@
             text-align: center;
         }
         .ResumoProjetos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
+            left: 30%;
             margin-top: 30vh;
             width: 50vh;
             height: 35vh;
             background-color: var(--MainColor);
             box-shadow: 5px 5px 10px 0px  rgba(0, 0, 0, 0.156);
             border-radius: 4vh;
+        }
+        .capa{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: 1px 1px 3px 0px  rgba(0, 0, 0, 0.156);
+            width: 80vh;
+            height: 50%;
+            margin: 5%;
+            border-radius: 2vh;
+        }
+        .capa > h1{
+            font-size: 2vh;
+            font-weight: 600;
+        }
+        .capa > img{
+            width: 60%;
+            height: 60%;
+        }
+        #gameboyCapa{
+            width: 40%;
+            height: 60%;
+        }
+        .textoExplicativo{
+            text-align: center;
+        }
+        .dificuldades{
+            width: 50vh;
+            margin-top: 20vh;
+            padding-top: 2%;
+            padding: 5%;
+        }
+        .dificuldades > h1{
+            text-align: center;
+        }
+        .resolucoes{
+            margin-top: 30svh;
+            width: 50vh;
+            padding: 2%;
+        }
+        .resolucoes > h1{
+            text-align: center;
+        }
+        #Rodape{
+            position: absolute;
+            margin-top: 8vh;
+            left: 0%;
+            background-color: rgba(0, 0, 0, 0.033);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 0vh;
+            box-shadow: 10px 0px 10px 0px  rgba(0, 0, 0, 0.03);
+        }
+        #AlinharCreditoFlex{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #AlinharCreditoFlex > a{
+            width: 20vh;
+            margin: 1%;
         }
